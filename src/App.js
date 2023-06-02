@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import DateTime from './DateTime';
+import PriceCalculator from './PriceCalculator';
+import Message from './Message';
+import ProgressBar from './ProgressBar';
+import AverageCalculator from './AverageCalculator';
+import DiscountMessage from './DiscountMessage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DateTime/>
+      <PriceCalculator/>
+      <Message/>
+      <ProgressBar/>
+      <AverageCalculator/>
+      <DiscountMessage/>
     </div>
   );
 }
